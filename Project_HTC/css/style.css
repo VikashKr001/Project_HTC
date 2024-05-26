@@ -1,0 +1,284 @@
+/*variables*/
+:root
+{
+    --clr-primary: #2e9cca;
+    --clr-primary-dark: #29648a;
+    --clr-secondary: #464866;
+    --clr-secondary-dark: #25274d;
+    --clr-secondary-light: #aaabb8;
+    --clr-white: white;
+    --transition: all 0.5s;
+}
+/*Global css properties */
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: var(--clr-secondary);
+}
+a
+{
+    text-decoration: none;
+}
+.show-border
+{
+    border: 3px solid black;
+}
+.section-heading
+{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.section
+{
+    width: 1200px;
+    margin:50px auto;
+    /* padding: 30px; */
+    
+}
+.section-heading .colorful-text
+{
+    color: var(--clr-primary);
+}
+/*Home Section*/
+#home
+{
+    background-image: url("/Images/homebg.png");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;     
+}
+.home-txt
+{
+    text-align: center;
+    width: 60%;
+    letter-spacing: .2rem;
+}
+.home-txt h1{
+    color: var(--clr-secondary-dark);
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+.home-txt p
+{
+    color: var(--clr-white);
+    
+    margin-bottom: 10px;
+}
+.home-txt a
+{
+    color: var(--clr-secondary);
+    padding: 20px;
+    margin-top: 15px;
+    background-color: var(--clr-white);
+    display: inline-block;
+    border: 2px solid white;
+}
+.home-txt a:hover
+{
+     background-color: transparent;
+     color: white;
+     
+}
+/*About Us Section*/
+.about-us-container
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+.about-us-txt
+{
+    width: 40%;
+}
+.about-us-txt p
+{
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+.about-us-txt h1
+{
+    margin-bottom: 10px;
+}
+/*Our Speciality Section*/
+.speciality-container
+{
+    display: flex;
+}
+.speciality-icon
+{
+    font-size: 30px;
+    background-color: var(--clr-secondary-dark);
+    color: var(--clr-primary);
+    align-self: flex-start;
+    padding: 10px 15px;
+}
+.speciality-txt
+{
+    margin-left: 8px;
+    margin-right: 20px;
+    font-size: 18px;
+    width: 25%;
+}
+.speciality-heading
+{
+    font-size: 18px;
+    letter-spacing: .2rem;
+}
+/* Featured tours Section */
+.tour-info-container
+{
+    display: flex;
+    z-index: -1;
+}
+.tour-card
+{
+    width: 30%;
+    margin: 20px;
+}
+.tour-card:hover
+{
+    transform: scale(1.05);
+}
+.tour-card img
+{
+    width: 100%;
+
+}
+.img-container
+{
+    position: relative;
+}
+.tour-txt-container p
+{
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: justify;
+}
+.tour-date
+{
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+}
+.tour-txt-container b
+{
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: .2rem;
+}
+/* Gallery Section */
+.g-img-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-section 
+{
+    width: 100%;
+
+}
+.g-img-container img
+{
+   padding: 25px;
+   margin: 10px;
+}
+.g-img-container img:hover
+{
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+/* Navigation-bar Section */
+.nv-section
+{
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--clr-white); 
+    position: fixed;
+    border-bottom: 1px solid black; 
+}
+.nv1
+{
+    margin-left: 120px;
+    
+}
+.nv-links,.nv-social-links
+{
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+}
+.nv-links a
+{
+    margin: 15px;
+    padding: 20px;
+    letter-spacing: 3px;
+    color: var(--clr-secondary);
+}
+.nv-links a:hover, .nv-social-links a:hover
+{
+    color: var(--clr-primary);
+}
+.nv-social-links a
+{
+    
+    padding: 10px;
+    font-size: 18px;
+    color: var(--clr-secondary);
+}
+/*Footer-section*/
+.footer-section
+{
+    background-color: var(--clr-secondary-dark);
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.ft-links
+{
+    margin-top: 50px;
+}
+.ft-links a
+{
+    color: var(--clr-white);
+    font-size: 18px;
+    margin: 5px;
+    letter-spacing: 3px;
+}
+.ft-links a:hover
+{
+    color: var(--clr-secondary);
+}
+.ft-a-links a
+{
+    color: var(--clr-primary);
+    font-size: 2rem;
+}
+.cp-right
+{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: var(--clr-white);
+}
+
+
